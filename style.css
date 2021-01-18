@@ -40,7 +40,6 @@ body{
     }
     .list-item{
         font-family: 'Prompt', sans-serif;
-        font-size: large;
         padding:5% 7%;
         display: flex;
         justify-content: flex-start;
