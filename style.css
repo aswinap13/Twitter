@@ -3,36 +3,114 @@ body{
     color: aliceblue;
     margin: 0;
 }
-.Left{
-    width: 20%;
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-}
-.left-top{
 
-}
-ul{
-    list-style-type: none;
-}
-.list-item{
-    padding: 5% 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.icon{
-    width: 32px;
-    height: 32px;
-    display: flex;
-    text-align: center;
-    margin-right: 10%;
-}
-.tweet{ 
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-top: 5%;
-    background-color: #17ADF0;
-    border-radius: 45px;
-}
+
+/* ================== (START) Complete CSS for Left Side Menu ================== */
+
+/* ================== CSS for Left Top ================== */
+
+    .Left{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+    .twitter{
+        padding: 5%;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin:5% 15%;
+        margin-bottom: 0vh;
+    }
+    .twitter:hover{
+        color: white; 
+        background-color:  rgb(0, 148, 213,0.1);
+    }
+    .icon{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        text-align: center;
+        margin-right: 10%;
+    }
+    .list-item{
+        font-family: 'Prompt', sans-serif;
+        font-size: large;
+        padding:5% 7%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.2s;
+    }
+    .list-item:hover{
+        color: #17ADF0; 
+        background-color: rgb(0, 148, 213,0.1);
+        border-radius: 40px;
+    }
+    .tweet{ 
+        text-align: center;
+        padding: 5% 5%;
+        width: 80%;
+        margin-top: 5%;
+        background-color: #17ADF0;
+        border-radius: 45px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+/* ================== CSS for Left Bottom ================== */
+
+
+    .Left-bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10%;
+        margin-bottom: 0%;
+        padding: 5%;
+    }
+    .Left-bottom>img{
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+    }
+    .account{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        margin-left: 5%;
+    }
+    .account>h1{
+        font-size: 17px;
+        margin-left: 10px;
+        padding: 0;
+        margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .account>p{
+        font-size: 14px;
+        opacity: 0.7;
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .accounticon{
+        margin-left: auto;
+    }
+    
+/* ================== (END) Complete CSS for Left Side Menu ================== */
+
+/* ================== (START) MEDIA QUERY ================== */
+
+@media screen and (max-width: 980px) {
+    .Left-top>ul{
+        display: none;
+    }
+    .Left-bottom{
+        display: none;
+    }
+  }
