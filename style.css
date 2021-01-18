@@ -40,11 +40,17 @@ body{
     }
     .list-item{
         font-family: 'Prompt', sans-serif;
+        font-size: small;
         padding:5% 7%;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
+        align-content: center;
         transition: 0.2s;
+    }
+    .list-item>p{
+        margin: 0%;
+        padding: 0%;
+        font-size: large;
     }
     .list-item:hover{
         color: #17ADF0; 
@@ -105,7 +111,7 @@ body{
 
 /* ================== (START) MEDIA QUERY ================== */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
     .Left-top>ul{
         display: none;
     }
