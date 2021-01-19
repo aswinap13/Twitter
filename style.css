@@ -3,7 +3,15 @@ body{
     color: aliceblue;
     margin: 0;
 }
+.Left{
+    width: 20%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.left-top{
 
+<<<<<<< HEAD
 
 /* ================== (START) Complete CSS for Left Side Menu ================== */
 
@@ -149,3 +157,30 @@ i{
         display: none;
     }
   }
+=======
+}
+ul{
+    list-style-type: none;
+}
+.list-item{
+    padding: 5% 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    text-align: center;
+    margin-right: 10%;
+}
+.tweet{ 
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 5%;
+    background-color: #17ADF0;
+    border-radius: 45px;
+}
+>>>>>>> parent of 2969b0c... Completed Left Side Menu
