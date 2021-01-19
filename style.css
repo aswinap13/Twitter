@@ -39,7 +39,11 @@ body{
 
     /* .list-item{
         font-family: 'Prompt', sans-serif;
+<<<<<<< HEAD
         font-size: small;
+=======
+        font-size: large;
+>>>>>>> parent of 1d77030... Update style.css
         padding:5% 7%;
         display: flex;
         transition: 0.2s;
