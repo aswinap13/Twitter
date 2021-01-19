@@ -25,12 +25,27 @@ body{
         width: 32px;
         height: 32px;
         margin:5% 15%;
-        margin-bottom: 0vh;
+        margin-bottom: 0%;
     }
     .twitter:hover{
         color: white; 
         background-color:  rgb(0, 148, 213,0.1);
     }
+
+    a{
+        text-decoration: none;
+        color:white ;
+    }
+    
+    .list-item{
+        font-size: large;
+        font-family: 'Prompt', sans-serif;
+        padding:5% 7%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.2s;
+    }    
     .icon{
         width: 32px;
         height: 32px;
@@ -38,32 +53,26 @@ body{
         text-align: center;
         margin-right: 10%;
     }
-    .list-item{
-        font-family: 'Prompt', sans-serif;
-        font-size: large;
-        padding:5% 7%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        transition: 0.2s;
-    }
     .list-item:hover{
         color: #17ADF0; 
         background-color: rgb(0, 148, 213,0.1);
         border-radius: 40px;
     }
+
+
     .tweet{ 
         text-align: center;
         padding: 5% 5%;
         width: 80%;
         margin-top: 5%;
         background-color: #17ADF0;
+        color: white;
         border-radius: 45px;
         font-family: 'Source Sans Pro', sans-serif;
+        border: 0px;
+        outline: none;
     }
-
 /* ================== CSS for Left Bottom ================== */
-
 
     .Left-bottom{
         display: flex;
@@ -104,13 +113,25 @@ body{
     
 /* ================== (END) Complete CSS for Left Side Menu ================== */
 
+
+
+/* ================== (START) Complete CSS for Menu ================== */
+
+/* ================== (END) Complete CSS for Menu ================== */
+
+
+
+
+
+
 /* ================== (START) MEDIA QUERY ================== */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
     .Left-top>ul{
         display: none;
     }
     .Left-bottom{
         display: none;
-    }
+    }.list-item{
+        font-size: small;}
   }
