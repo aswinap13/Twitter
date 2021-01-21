@@ -16,6 +16,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -201,7 +203,7 @@ input:focus{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* ================== (START) Content 1 ================== */
+/* ================== (START) Content ================== */
 #hashtag{
     text-decoration: underline;
     color: #136cca;
@@ -299,14 +301,182 @@ input:focus{
     padding: 1% 5%;
 }
 
-/* ================== (END) Content 1 ================== */
-
-/* ================== (START) Content 2 ================== */
-
-/* ================== (END) Content 2 ================== */
-
+/* ================== (END) Content ================== */
 
 /* ================== (END) Complete CSS for Menu ================== */
+
+
+/* ================== (START) Complete CSS for Right Side Menu ================== */
+.right{
+    width: 25%;
+}
+
+/* ================== (Start) Search ================== */
+
+.search{
+    margin: 4% ; 
+    border-radius: 40px;
+    background-color: rgba(39, 48, 54, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+.search>i{
+    padding:4%;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.search>input{
+    background-color: rgba(39, 48, 54,0.1);
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+/* ================== (End) Search ================== */
+
+
+/* ================== (Start) Trending ================== */
+
+.trending{
+    background-color: rgba(39, 48, 54, 0.5);
+    border-radius: 15px;
+    display: flex;
+    margin: 4%;
+    flex-direction: column;
+    overflow: hidden;
+}
+.trending-item{
+    padding-left: 4%;
+    border-bottom: 2px solid rgba(80, 80, 80, .5);
+}
+.hover:hover{
+    background-color: rgba(80, 80, 80, .1);
+}
+.trending-item>h1{
+    font-size: 17px;
+    font-family: 'Prompt', sans-serif;
+}
+.trending-item>p{
+    color: #17ADF0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.trending-item:last-of-type{
+    border-bottom: none;
+}
+.item-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item-inner-text{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 70%;
+}
+.item-inner-text>p{
+    padding: 1%;
+    margin: 0%;
+    opacity: 0.7;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+.item-inner-text>h1{
+    padding: 1%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+.item-inner-img>img{
+    width: 62px;
+    height: 52px;
+    border-radius: 15px;
+}
+
+/* ================== (End) Trending ================== */
+
+
+/* ================== (Start) Who to Follow ================== */
+
+.whoto{
+    width: 100%;
+    background-color: rgba(39, 48, 54, 0.5);
+    border-radius: 15px;
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.whoto-item{
+    display: flex;
+    flex-direction: row;
+    padding:2% 4%;
+    border-bottom: 2px solid rgba(80, 80, 80, .5);
+}
+.whoto-item:last-of-type{
+    border: none;
+}
+.hover:hover{
+    background-color: rgba(80, 80, 80, .1);
+}
+.whoto-item>h1{
+    font-size: 17px;
+    font-family: 'Prompt', sans-serif;}
+.accounts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.accounts>photo{
+    width: 20%;
+}
+.photo>img{
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+}
+.nametext{
+    margin-left: 3%;
+}
+.nametext>p{
+    margin: 0%;
+    padding: 0%;
+    opacity: 0.7;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nametext>h1{
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+.whoto-item>p{
+    color: #17ADF0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.followbutton{
+    margin:0% auto;
+}
+.followbutton>h1{
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding:5% 13%;
+    border: 2px solid #0f79aa ;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    color: #0f79aa;
+    border-radius: 40px;
+}
+/* ================== (End) Who to Follow ================== */
+
+
+/* ================== (END) Complete CSS for Right Side Menu ================== */
+
 
 /* ================== (START) MEDIA QUERY ================== */
 
@@ -340,7 +510,14 @@ input:focus{
             margin-top: 0%;
             padding-top: 0%;
         }
+        .account1-content>img{
+            margin-top: -1%;
+        }
         .postbottom{
             padding-bottom: 2%;
+        }
+        .right{
+            display: none;
+            width: 0%;
         }
   }
