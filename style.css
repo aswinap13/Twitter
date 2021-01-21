@@ -201,9 +201,112 @@ input:focus{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* ================== (START) Content 1 ================== */
+#hashtag{
+    text-decoration: underline;
+    color: #136cca;
+}
+.content{
+    border: 2px solid rgba(80, 80, 80, .5);
+    border-left: none;
+    border-right: none;
+}
+.content:hover{
+    background-color: rgba(80, 80, 80, .1);
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+}
+.retweet{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 2% 1% 2%;
+    margin: 0% 0% 0% 3%;
+}
+.retweet>i{
+    margin-right: 1%;
+}
+#ap{
+    text-decoration: underline;
+    opacity: 0.5;
+    font-size: small;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.account1-content{
+    display: flex;
+    flex-direction: row;
+    padding: 0% 2%;
+}
+.account1-content>img{
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+}
+.account1-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width:100%;
+    margin: -3% 0% 0% 0%;
+}
+.account1-name>h1{
+    font-size: 18px;
+    padding: 0% 1%;
+    font-family: 'Prompt', sans-serif;
+    width: fit-content;
+}
+.account1-name>p{
+    font-size: 15px;
+    opacity: 0.7;
+    font-family: 'Open Sans', sans-serif;
+    width: fit-content;
+}
+.account1-icon{
+    margin-left: auto;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.postup{
+    padding: 0.3% 1.7%;
+    margin-top: -3%;
+    margin-left:7%;
+    width: 85%;
+    
+}
+.postup>p{
+    padding: 0%;
+    margin: 0%;
+}
+.postup>img{
+    width: 80%;
+    border-radius: 20px;
+    margin: 2% 0% 2% 0%;
+}
+.postbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1% 5%;
+}
+
+/* ================== (END) Content 1 ================== */
+
+/* ================== (START) Content 2 ================== */
+
+/* ================== (END) Content 2 ================== */
+
+
 /* ================== (END) Complete CSS for Menu ================== */
-
-
 
 /* ================== (START) MEDIA QUERY ================== */
 
@@ -220,5 +323,24 @@ input:focus{
         }
         .menu{
             width: 100%;
+        }
+        .retweet{
+            padding: 3%;
+        }
+        .account1-name{
+            display: block;
+            padding: 1%;
+        }
+        .account1-name>h1{
+            margin: 0%;
+            margin-top: 1%;
+            padding: 0%;
+        }
+        .account1-name>p{
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+        .postbottom{
+            padding-bottom: 2%;
         }
   }
